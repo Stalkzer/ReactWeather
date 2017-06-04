@@ -1,7 +1,23 @@
 var path = require("path");
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+var webpack = require("webpack");
+
 module.exports = {
-    entry: "./app/app.jsx",
+    entry: [
+        "script-loader!jquery/dist/jquery.min.js",
+        "script-loader!foundation-sites/dist/foundation.min.js",
+        "./app/app.jsx"
+    ],
+    externals: {
+        jquery: "jQuery"
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery:"jquery"
+        })
+        //new UglifyJSPlugin()
+    ],
     output: {
         path: __dirname,
         filename: "./public/bundle.js"
@@ -32,8 +48,5 @@ module.exports = {
             }
         ]
     },
-    devtool: "inline-source-map",
-    plugins: [
-    new UglifyJSPlugin()
-    ]
+    devtool: "inline-source-map"
 };
