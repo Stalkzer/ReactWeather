@@ -19,7 +19,7 @@ var About = (props) => {
                     <a href="http://openweathermap.org">Open Weather Map</a> - Weather api used.
                 </li>
                 <li>
-                    <a href="https://github.com/Stalkzer/ReactWeather">GitHub repo</a> - Fork me on Github
+                    <a href="https://github.com/Stalkzer/ReactWeather">GitHub repo</a>
                 </li>
             </ul>
         </div>
