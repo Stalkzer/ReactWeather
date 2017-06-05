@@ -24,15 +24,16 @@ module.exports = {
     },
     resolve: {
         alias: {
-            Main:            path.resolve(__dirname, "app/components/Main"),
-            Nav:             path.resolve(__dirname, "app/components/Nav"),
-            Weather:         path.resolve(__dirname, "app/components/Weather"),
-            WeatherForm:     path.resolve(__dirname, "app/components/WeatherForm"),
-            WeatherMessage:  path.resolve(__dirname, "app/components/WeatherMessage"),
-            About:           path.resolve(__dirname, "app/components/About"),
-            Examples:        path.resolve(__dirname, "app/components/Examples"),
-            openWeatherMap:  path.resolve(__dirname, "app/api/openWeatherMap"),
-            ErrorModal:      path.resolve(__dirname, "app/components/ErrorModal")
+            Main:                   path.resolve(__dirname, "app/components/Main"),
+            Nav:                    path.resolve(__dirname, "app/components/Nav"),
+            Weather:                path.resolve(__dirname, "app/components/Weather"),
+            WeatherForm:            path.resolve(__dirname, "app/components/WeatherForm"),
+            WeatherMessage:         path.resolve(__dirname, "app/components/WeatherMessage"),
+            About:                  path.resolve(__dirname, "app/components/About"),
+            Examples:               path.resolve(__dirname, "app/components/Examples"),
+            openWeatherMap:         path.resolve(__dirname, "app/api/openWeatherMap"),
+            ErrorModal:             path.resolve(__dirname, "app/components/ErrorModal"),
+            applicationStyles:      path.resolve(__dirname, "app/styles/app.css")
 
         },
         extensions: [".js", ".jsx"]
