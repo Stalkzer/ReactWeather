@@ -32,6 +32,7 @@ module.exports = {
             About:                  path.resolve(__dirname, "app/components/About"),
             Examples:               path.resolve(__dirname, "app/components/Examples"),
             openWeatherMap:         path.resolve(__dirname, "app/api/openWeatherMap"),
+            Loading:                path.resolve(__dirname, "app/components/Loading"),
             ErrorModal:             path.resolve(__dirname, "app/components/ErrorModal"),
             applicationStyles:      path.resolve(__dirname, "app/styles/app.scss")
 
